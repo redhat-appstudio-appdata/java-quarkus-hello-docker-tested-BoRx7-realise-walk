@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-quarkus-hello-docker-tested
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-ee-afan-tenant/java-quarkus-hello-docker-tested/java-quarkus-hello-docker-tested@sha256:feeddbce55f647f3e1e70bb7d880c24df08dbb79803fff1af4cec27a22952162
+        name: my-java-quarkus
+        resources: {}
+status: {}
